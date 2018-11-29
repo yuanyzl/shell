@@ -1,0 +1,548 @@
+    1  passwd 
+    2  sudo vi /etc/sysconfig/network-scripts/ifcfg-ens33
+    3  exit
+    4  cd 
+    5  sudo vi /etc/sysconfig/network-scripts/ifcfg-ens33
+    6  ifconfig
+    7  sudo vi /etc/sysconfig/network-scripts/ifcfg-ens33
+    8  cd 
+    9  ifconfig
+   10  vi /etc/sysconfig/network-scripts/ifcfg-ens33
+   11  sudo vi /etc/sysconfig/network-scripts/ifcfg-ens33
+   12  su
+   13  su hadoop1
+   14  vi /etc/hostname 
+   15  sudo vi /etc/hostname 
+   16  sudo vi /etc/hosts
+   17  reboot
+   18  exit
+   19  cd
+   20  visudo
+   21  su
+   22  reboot
+   23  exit
+   24  reboot
+   25  exit
+   26  ssh hadoop2
+   27  exit
+   28  ssh hadoop2
+   29  exit
+   30  ssh hadoop2
+   31  exit
+   32  cd .ssh
+   33  ls
+   34  rm authorized_keys 
+   35  rm id*
+   36  ls
+   37  su
+   38  ssh hadoop2
+   39  ssh hadoop3
+   40  ssh hadoop2
+   41  ssh-copy-id hadoop2
+   42  ssh hadoop2
+   43  ssh hadoop3
+   44  ssh hadoop3
+   45  cd .ssh
+   46  ls
+   47  rm authorized_keys 
+   48  rm id*
+   49  ls
+   50  ll
+   51  cd 
+   52  cd .ssh
+   53  ssh-keygen -t rsa
+   54  ssh-copy-id hadoop1
+   55  ssh-copy-id hadoop2
+   56  ssh-copy-id hadoop3
+   57  cd hadoop1
+   58  ssh hadoop1
+   59  ssh hadoop2
+   60  ssh-copy-id hadoop2
+   61  ssh hadoop2
+   62  ssh hadoop3
+   63  rpm ga|grep ssh
+   64  rpm -qa|grep ssh
+   65  ssh hadoop1
+   66  cd .ssh
+   67  ll
+   68  ls
+   69  ssh -keygen -t rsa
+   70  ssh-keygen -t rsa
+   71  ls
+   72  cat id_rsa.pub >>authorized_keys
+   73  ls
+   74  chmod 600 authorized_keys 
+   75  ll
+   76  ssh hadoop1
+   77  scp authorized_keys hadoop@hadoop2:~/.ssh/
+   78  scp authorized_keys hadoop@hadoop3:~/.ssh/
+   79  scp authorized_keys hadoop@hadoop2:~/.ssh/
+   80  ssh hadoop2
+   81  ssh-copy-id hadoop2
+   82  ssh hadoop2
+   83  cd .ssh
+   84  ls
+   85  rm authorized_keys 
+   86  rm id*
+   87  ls
+   88  ssh-keygen -t rsa
+   89  ll
+   90  cat id_rsa.pub >> authorized_keys
+   91  chmod 600 authorized_keys
+   92  ssh hadoop1
+   93  scp authorized_keys hadoop@hadoop2:~/.ssh/
+   94  scp authorized_keys hadoop@hadoop3:~/.ssh/
+   95  ssh hadoop2
+   96  cd .ssh
+   97  ls
+   98  rm authorized_keys 
+   99  rm id*
+  100  ls
+  101  ssh hadoop3
+  102  exit
+  103  ssh hadoop2
+  104  exit
+  105  ssh hadoop2
+  106  exit
+  107  ssh hadoop2
+  108  exit
+  109  sudo vim /etc/hosts
+  110  cd .ssh
+  111  ls
+  112  scp authorized_keys hadoop@hadoop2:~/.ssh/
+  113  scp authorized_keys hadoop@hadoop3:~/.ssh/
+  114  ssh hadoop1
+  115  ssh hadoop1
+  116  cd .ssh
+  117  ls
+  118  rm a
+  119  rm authorized_keys 
+  120  rm id*
+  121  ls
+  122  ssh-keygen -t rsa
+  123  ssh-copy-id hadoop1
+  124  ssh-copy-id hadoop2
+  125  ssh-copy-id hadoop3
+  126  ls
+  127  ssh hadoop1
+  128  su
+  129  ls
+  130  cd 
+  131  ls
+  132  ll
+  133  ls
+  134  ll
+  135  ls
+  136  su
+  137  cd .shh
+  138  ssh 
+  139  ssh hadoop1
+  140  cd .ssh
+  141  ls
+  142  ssh hadoop2
+  143  cd /usr/local/mysql/bin/
+  144  ls
+  145  ./mysql -uroot –p
+  146  cd /usr/local/mysql/bin/
+  147  ./mysql -uroot –p
+  148  cd /etc/
+  149  vim my.cnf
+  150  ls
+  151  vim my.cnf
+  152  find / -name mysql.sock
+  153  cd 
+  154  find / -name mysql.sock
+  155  cd /tmp/
+  156  ls
+  157  ls |grep mysql
+  158  cd /
+  159  find / -name mysql.sock
+  160  su 
+  161  sestatus -v
+  162  su
+  163  mysql
+  164  mysql -u root -p
+  165  mysql -uroot -p 
+  166  cd /var/lib/mysql/
+  167  ls
+  168  cd
+  169  cd /
+  170  ll
+  171  cd /var/lib/
+  172  ls
+  173  cd mysql/
+  174  ls
+  175  cd mysql/
+  176  ls
+  177  cd 
+  178  find / -name mysql
+  179  ll
+  180  su
+  181  ll
+  182  ls
+  183  su
+  184  ll
+  185  su 
+  186  su
+  187  ll
+  188  mkdir shell
+  189  ll
+  190  cd shell/
+  191  touch 1.sh
+  192  ll
+  193  vim
+  194  vim 1.sh 
+  195  bash 1.sh 
+  196  chomd a+x 1.sh 
+  197  chmod a+x 1.sh 
+  198  ./1.sh 
+  199  rpm -qf `which vim`
+  200  file=`which vim`
+  201  echo $file
+  202  bash
+  203  echo $file
+  204  vim 2.sh
+  205  sh 2.sh 
+  206  cat 2.sh 
+  207  $0
+  208  vim 3.sh
+  209  sh 3.sh  aming linux
+  210  vim 3.sh 
+  211  sh 3.sh aming linux
+  212  sh 3.sh aming linux 11 33
+  213  a=1;b=2
+  214  c=$a+$b
+  215  echo $c
+  216  c=$[$a+$b]
+  217  echl $c
+  218  echo $c
+  219  c=$(($a+$b))
+  220  echo $c
+  221  vim if1.sh
+  222  sh if1.sh 
+  223  sh -x if1.sh 
+  224  vim if1.sh 
+  225  sh if1.sh 
+  226  sh -x if1.sh 
+  227  vim if1.sh 
+  228  sh -x if1.sh 
+  229  vim if1.sh 
+  230  sh -x if1.sh 
+  231  vim if1.sh 
+  232  sh -x if1.sh 
+  233  vim if1.sh 
+  234  sh -x if1.sh 
+  235  vim if1.sh 
+  236  sh -x if1.sh 
+  237  vim if1.sh 
+  238  sh -x if1.sh 
+  239  a=5
+  240  if [ $a -lt 10 ] && [$a -gt 1 ];then echo ok; fi
+  241  echo $a
+  242  if [ $a -lt 10 ] && [ $a -gt 1 ];then echo ok; fi
+  243  vim if2.sh
+  244  sh if2.sh 
+  245  vim if2.sh
+  246  sh if2.sh 
+  247  sh -x if2.sh 
+  248  vim if2.sh
+  249  if [ -e 1.sh ];then echo "1.sh exist";fi
+  250  [ -f 1.sh ] && echo "1.sh exiis"
+  251  [ -d -r -x -w ]
+  252  head history
+  253  history|grep 1
+  254  cat history
+  255  history >history.txt
+    1  passwd 
+    2  sudo vi /etc/sysconfig/network-scripts/ifcfg-ens33
+    3  exit
+    4  cd 
+    5  sudo vi /etc/sysconfig/network-scripts/ifcfg-ens33
+    6  ifconfig
+    7  sudo vi /etc/sysconfig/network-scripts/ifcfg-ens33
+    8  cd 
+    9  ifconfig
+   10  vi /etc/sysconfig/network-scripts/ifcfg-ens33
+   11  sudo vi /etc/sysconfig/network-scripts/ifcfg-ens33
+   12  su
+   13  su hadoop1
+   14  vi /etc/hostname 
+   15  sudo vi /etc/hostname 
+   16  sudo vi /etc/hosts
+   17  reboot
+   18  exit
+   19  cd
+   20  visudo
+   21  su
+   22  reboot
+   23  exit
+   24  reboot
+   25  exit
+   26  ssh hadoop2
+   27  exit
+   28  ssh hadoop2
+   29  exit
+   30  ssh hadoop2
+   31  exit
+   32  cd .ssh
+   33  ls
+   34  rm authorized_keys 
+   35  rm id*
+   36  ls
+   37  su
+   38  ssh hadoop2
+   39  ssh hadoop3
+   40  ssh hadoop2
+   41  ssh-copy-id hadoop2
+   42  ssh hadoop2
+   43  ssh hadoop3
+   44  ssh hadoop3
+   45  cd .ssh
+   46  ls
+   47  rm authorized_keys 
+   48  rm id*
+   49  ls
+   50  ll
+   51  cd 
+   52  cd .ssh
+   53  ssh-keygen -t rsa
+   54  ssh-copy-id hadoop1
+   55  ssh-copy-id hadoop2
+   56  ssh-copy-id hadoop3
+   57  cd hadoop1
+   58  ssh hadoop1
+   59  ssh hadoop2
+   60  ssh-copy-id hadoop2
+   61  ssh hadoop2
+   62  ssh hadoop3
+   63  rpm ga|grep ssh
+   64  rpm -qa|grep ssh
+   65  ssh hadoop1
+   66  cd .ssh
+   67  ll
+   68  ls
+   69  ssh -keygen -t rsa
+   70  ssh-keygen -t rsa
+   71  ls
+   72  cat id_rsa.pub >>authorized_keys
+   73  ls
+   74  chmod 600 authorized_keys 
+   75  ll
+   76  ssh hadoop1
+   77  scp authorized_keys hadoop@hadoop2:~/.ssh/
+   78  scp authorized_keys hadoop@hadoop3:~/.ssh/
+   79  scp authorized_keys hadoop@hadoop2:~/.ssh/
+   80  ssh hadoop2
+   81  ssh-copy-id hadoop2
+   82  ssh hadoop2
+   83  cd .ssh
+   84  ls
+   85  rm authorized_keys 
+   86  rm id*
+   87  ls
+   88  ssh-keygen -t rsa
+   89  ll
+   90  cat id_rsa.pub >> authorized_keys
+   91  chmod 600 authorized_keys
+   92  ssh hadoop1
+   93  scp authorized_keys hadoop@hadoop2:~/.ssh/
+   94  scp authorized_keys hadoop@hadoop3:~/.ssh/
+   95  ssh hadoop2
+   96  cd .ssh
+   97  ls
+   98  rm authorized_keys 
+   99  rm id*
+  100  ls
+  101  ssh hadoop3
+  102  exit
+  103  ssh hadoop2
+  104  exit
+  105  ssh hadoop2
+  106  exit
+  107  ssh hadoop2
+  108  exit
+  109  sudo vim /etc/hosts
+  110  cd .ssh
+  111  ls
+  112  scp authorized_keys hadoop@hadoop2:~/.ssh/
+  113  scp authorized_keys hadoop@hadoop3:~/.ssh/
+  114  ssh hadoop1
+  115  ssh hadoop1
+  116  cd .ssh
+  117  ls
+  118  rm a
+  119  rm authorized_keys 
+  120  rm id*
+  121  ls
+  122  ssh-keygen -t rsa
+  123  ssh-copy-id hadoop1
+  124  ssh-copy-id hadoop2
+  125  ssh-copy-id hadoop3
+  126  ls
+  127  ssh hadoop1
+  128  su
+  129  ls
+  130  cd 
+  131  ls
+  132  ll
+  133  ls
+  134  ll
+  135  ls
+  136  su
+  137  cd .shh
+  138  ssh 
+  139  ssh hadoop1
+  140  cd .ssh
+  141  ls
+  142  ssh hadoop2
+  143  cd /usr/local/mysql/bin/
+  144  ls
+  145  ./mysql -uroot –p
+  146  cd /usr/local/mysql/bin/
+  147  ./mysql -uroot –p
+  148  cd /etc/
+  149  vim my.cnf
+  150  ls
+  151  vim my.cnf
+  152  find / -name mysql.sock
+  153  cd 
+  154  find / -name mysql.sock
+  155  cd /tmp/
+  156  ls
+  157  ls |grep mysql
+  158  cd /
+  159  find / -name mysql.sock
+  160  su 
+  161  sestatus -v
+  162  su
+  163  mysql
+  164  mysql -u root -p
+  165  mysql -uroot -p 
+  166  cd /var/lib/mysql/
+  167  ls
+  168  cd
+  169  cd /
+  170  ll
+  171  cd /var/lib/
+  172  ls
+  173  cd mysql/
+  174  ls
+  175  cd mysql/
+  176  ls
+  177  cd 
+  178  find / -name mysql
+  179  ll
+  180  su
+  181  ll
+  182  ls
+  183  su
+  184  ll
+  185  su 
+  186  su
+  187  ll
+  188  mkdir shell
+  189  ll
+  190  cd shell/
+  191  touch 1.sh
+  192  ll
+  193  vim
+  194  vim 1.sh 
+  195  bash 1.sh 
+  196  chomd a+x 1.sh 
+  197  chmod a+x 1.sh 
+  198  ./1.sh 
+  199  rpm -qf `which vim`
+  200  file=`which vim`
+  201  echo $file
+  202  bash
+  203  echo $file
+  204  vim 2.sh
+  205  sh 2.sh 
+  206  cat 2.sh 
+  207  $0
+  208  vim 3.sh
+  209  sh 3.sh  aming linux
+  210  vim 3.sh 
+  211  sh 3.sh aming linux
+  212  sh 3.sh aming linux 11 33
+  213  a=1;b=2
+  214  c=$a+$b
+  215  echo $c
+  216  c=$[$a+$b]
+  217  echl $c
+  218  echo $c
+  219  c=$(($a+$b))
+  220  echo $c
+  221  vim if1.sh
+  222  sh if1.sh 
+  223  sh -x if1.sh 
+  224  vim if1.sh 
+  225  sh if1.sh 
+  226  sh -x if1.sh 
+  227  vim if1.sh 
+  228  sh -x if1.sh 
+  229  vim if1.sh 
+  230  sh -x if1.sh 
+  231  vim if1.sh 
+  232  sh -x if1.sh 
+  233  vim if1.sh 
+  234  sh -x if1.sh 
+  235  vim if1.sh 
+  236  sh -x if1.sh 
+  237  vim if1.sh 
+  238  sh -x if1.sh 
+  239  a=5
+  240  if [ $a -lt 10 ] && [$a -gt 1 ];then echo ok; fi
+  241  echo $a
+  242  if [ $a -lt 10 ] && [ $a -gt 1 ];then echo ok; fi
+  243  vim if2.sh
+  244  sh if2.sh 
+  245  vim if2.sh
+  246  sh if2.sh 
+  247  sh -x if2.sh 
+  248  vim if2.sh
+  249  if [ -e 1.sh ];then echo "1.sh exist";fi
+  250  [ -f 1.sh ] && echo "1.sh exiis"
+  251  [ -d -r -x -w ]
+  252  head history
+  253  history|grep 1
+  254  cat history
+  255  history >history.txt
+  256  ll
+  257  ls
+  258  cat history.txt 
+  259  ls
+  260  vim if2.sh 
+  261  sh if2.sh 
+  262  sh -x if2.sh 
+  263  if ls /etc/difdjf >/shell/a 2>/shell/a ;then echo ok;else echo notok;fi
+  264  vim date.sh
+  265  sh date.sh 
+  266  cat date.sh 
+  267  cat /tmp/2018-11-28.log 
+  268  vim date.sh 
+  269  wc -l
+  270  grep 1.sh |wc -l
+  271  wc -l 1.sh 
+  272  wc -c 1.sh 
+  273  wc -1 1.sh 
+  274  pwd
+  275  n=`wc -l /home/hadoop/shell/1.sh `
+  276  echo $n
+  277  if [ $n -gt 2 ] ;then echo ok;if
+  278  if [ $n -gt 2 ] ;then echo ok;fi
+  279  if [ $n -gt 2 ];then echo ok;fi
+  280  echo $n
+  281  echo $n|awk '{print $1}'
+  282  echo $n|awk '{print $2}'
+  283  if [ $n|awk '{print $1}' -gt 2 ] ;then echo ok;if
+  284  if [ $n|awk '{print $1}' -gt 2 ] ;then echo ok;fi
+  285  if [ $n|awk '{print $1}' -gt 2 ];then echo ok;fi
+  286  if [ ($n|awk '{print $1}') -gt 2 ];then echo ok;fi
+  287  m=$n|awk '{print $1}'
+  288  echo $m
+  289  a=1
+  290  [ -n $a ] && echo ok
+  291  history 2>>history.txt 
+  292  cat history.txt 
+  293  history >> history.txt 
